@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.home.khalil.bottomsheet.VrActivity">
+
+
+    <com.google.vr.sdk.widgets.pano.VrPanoramaView
+        android:id="@+id/pano_view"
+        android:layout_width="match_parent"
+        android:layout_margin="5dip"
+        android:scrollbars="none"
+        android:layout_height="300dp"
+         />
+
+    <com.google.vr.sdk.widgets.pano.VrPanoramaView
+        android:id="@+id/pano_view2"
+        android:layout_below="@+id/pano_view"
+        android:layout_width="match_parent"
+        android:layout_margin="5dip"
+        android:scrollbars="none"
+        android:layout_height="300dp"
+        />
+
+    </RelativeLayout>

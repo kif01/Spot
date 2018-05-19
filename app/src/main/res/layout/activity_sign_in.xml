@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_in"
+    android:layout_width="match_parent"
+android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+
+    tools:context="com.home.khalil.bottomsheet.SignInActivity">
+
+
+   <!-- <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/background"
+            android:scaleType="centerCrop"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#998F2AC1"
+            />
+
+
+
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_app_name"
+        android:textSize="50sp"
+
+
+       android:layout_marginTop="90dp"
+        android:layout_centerHorizontal="true"
+
+
+        android:textColor="@android:color/white"
+        android:text="Spot"
+        />
+
+    <TextView
+        android:id="@+id/text_slogan"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:layout_below="@+id/text_app_name"
+        android:text="Locate Your Interests\n\t Anywhere, Anytime"
+
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/logo2"
+
+        />
+
+
+
+
+    <com.google.android.gms.common.SignInButton
+
+        android:id="@+id/sign_in"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    </com.google.android.gms.common.SignInButton>
+
+</RelativeLayout>

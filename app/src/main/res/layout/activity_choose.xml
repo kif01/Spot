@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/activity_choose"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.home.khalil.bottomsheet.ChooseActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Having a hard time deciding what to eat,\nFeed us to feed you."
+        />
+
+    <View
+        android:id="@+id/choose_view"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorAccent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        />
+
+
+
+    <pl.droidsonroids.gif.GifTextView
+        android:layout_marginTop="5dp"
+        android:layout_width="45dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/choose_view"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/gif"
+        android:background="@drawable/anim2"
+        />
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/gif"
+        android:layout_marginTop="10dp"
+        android:text="Which one do you prefer?"
+        android:textSize="22sp"
+        />
+
+
+    <LinearLayout
+        android:layout_marginTop="2dp"
+        android:id="@+id/layout"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:foreground="?android:attr/selectableItemBackground"
+        android:id="@+id/card1"
+        app:cardCornerRadius="6dp"
+        app:cardUseCompatPadding="true"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+            android:adjustViewBounds="true"
+            android:id="@+id/choose_image"
+            android:scaleType="centerCrop"
+            android:layout_width="300dp"
+            android:layout_height="325dp"
+            android:background="@drawable/duke"
+
+            />
+
+        <TextView
+
+
+            android:layout_below="@+id/choose_image"
+            android:id="@+id/choose_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Deek Duke Beirut"
+            android:textSize="22sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            />
+
+            <ImageView
+
+                android:layout_below="@+id/choose_name"
+                android:layout_width="wrap_content"
+                android:background="@drawable/ic_rating"
+                android:id="@+id/image1"
+
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:paddingBottom="7dp"
+                android:textStyle="bold"
+                android:id="@+id/choose_rate"
+               android:layout_marginStart="5dp"
+                android:textColor="#C2185B"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/choose_name"
+                android:layout_toRightOf="@+id/image1"
+
+                android:text="3.8"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:id="@+id/card2"
+            android:layout_weight="1"
+            app:cardCornerRadius="6dp"
+            app:cardUseCompatPadding="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:id="@+id/choose_image2"
+                android:scaleType="centerCrop"
+                android:layout_width="300dp"
+                android:background="@drawable/cafehamra"
+                android:layout_height="325dp" />
+
+            <TextView
+
+
+                android:id="@+id/choose_name2"
+                android:layout_below="@+id/choose_image2"
+                android:text="Cafe Hamra Beirut"
+                android:textSize="22sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_below="@+id/choose_name2"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/ic_rating"
+                    android:id="@+id/image2"
+
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:paddingBottom="7dp"
+                    android:textStyle="bold"
+                    android:textColor="#C2185B"
+                    android:id="@+id/choose_rate2"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/choose_name2"
+                    android:layout_toRightOf="@+id/image2"
+                    android:text="3.2"
+                    />
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "805895003612",
+    "firebase_url": "https://trusty-coder-157322.firebaseio.com",
+    "project_id": "trusty-coder-157322",
+    "storage_bucket": "trusty-coder-157322.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:805895003612:android:803fd0ee44d37216",
+        "android_client_info": {
+          "package_name": "com.home.khalil.bottomsheet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "805895003612-31h41simlic176f8l04qo0fhoam6o6vj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmGEZMAalgH6eofyek4Pb5BpeWVq2Ktqg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "805895003612-31h41simlic176f8l04qo0fhoam6o6vj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/activity_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.home.khalil.bottomsheet.MenuActivity">
+
+    <TextView
+        android:id="@+id/text_offer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:text="Offers"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+
+        />
+    <View
+        android:id="@+id/view_prof2"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/text_offer"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorAccent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        />
+
+
+
+    <android.support.v7.widget.CardView
+
+        android:foreground="?android:attr/selectableItemBackground"
+        android:id="@+id/card1"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/view_prof2"
+        android:layout_centerHorizontal="true"
+        app:cardUseCompatPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+
+            android:layout_width="280dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:background="@drawable/offre2"
+            />
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+
+        android:layout_marginTop="40dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:id="@+id/card2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/card1"
+        app:cardUseCompatPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+
+            android:layout_gravity="center_horizontal"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/offre"
+            />
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
